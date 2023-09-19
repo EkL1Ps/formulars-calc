@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="window">
+      <div class="row">
+        <div class="title-icon">
+          <img class="window-img" src="image/image.svg" alt="window-image" />
+          <p>Обчислення за різними функціями</p>
+          <img class="window-icons-minus" src="image/minus.svg" alt="window" />
+          <img
+            class="window-icons-expand"
+            src="image/square.svg"
+            alt="window-expand"
+          />
+          <img
+            class="window-icons-close"
+            src="image/close.svg"
+            alt="widnow-close"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="window-field">
+          <div class="data-from-inputs">
+            <p>a =</p>
+            <input class="js-number-a" type="number" />
+          </div>
+          <div class="data-from-inputs">
+            <p>b =</p>
+            <input class="js-number-b" type="number" />
+          </div>
+          <div class="data-from-inputs">
+            <p>c =</p>
+            <input class="js-number-c" type="number" />
+          </div>
+          <div class="formulas">
+            <select class="js-select-op">
+              <option value="geron">Формула Герона</option>
+              <option value="VParallelepiped">Об'єм паралелепіпеда</option>
+              <option value="+">Додавання</option>
+            </select>
+          </div>
+
+          <button class="js-btn-result">Обчислення</button>
+          <div class="output-field">
+            <p>Рішення:</p>
+            <p class="js-output"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="math.js"></script>
+    <script src="calculate.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
