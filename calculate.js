@@ -1,7 +1,6 @@
 const FORMULAS = {
-  formulaGerona: "geron",
-  sum: "+",
-  VParallelepiped: "VParallelepiped",
+  formulaGerona: "formulaGerona",
+  PithagorasFormula: "PithagorasFormula",
 };
 
 function calculate({ a, b, c, formula }) {
@@ -11,11 +10,8 @@ function calculate({ a, b, c, formula }) {
     case FORMULAS.formulaGerona:
       result = formulaGerona(a, b, c);
       break;
-    case FORMULAS.sum:
-      result = sum(a, b, c);
-      break;
-    case FORMULAS.VParallelepiped:
-      result = VParallelepiped(a, b, c);
+    case FORMULAS.PithagorasFormula:
+      result = PithagorasFormula(a, b);
       break;
     default:
       break;

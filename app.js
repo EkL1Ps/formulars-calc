@@ -4,6 +4,7 @@ const inputC = document.querySelector(".js-number-c");
 const selectOp = document.querySelector(".js-select-op");
 const btnResult = document.querySelector(".js-btn-result");
 const output = document.querySelector(".js-output");
+const divInputC = document.getElementById("input-c");
 
 btnResult.addEventListener("click", function () {
   const a = Number(inputA.value);
@@ -18,4 +19,12 @@ btnResult.addEventListener("click", function () {
     formula: operation,
   });
   output.innerHTML = result;
+});
+
+selectOp.addEventListener("change", function () {
+  if (selectOp.value === "PithagorasFormula") {
+    divInputC.classList.add("d-none");
+  } else {
+    divInputC.classList.remove("d-none");
+  }
 });
