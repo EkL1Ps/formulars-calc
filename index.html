@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab-1</title>
+    <title>Formulas Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="window">
-      <div class="row">
+      <div class="row top-bar">
         <div class="title-icon">
           <img class="window-img" src="image/image.svg" alt="window-image" />
-          <p>Обчислення за різними функціями</p>
+          <p>Formulas calculator</p>
+        </div>
+        <div class="int-icons">
           <img class="window-icons-minus" src="image/minus.svg" alt="window" />
           <img
             class="window-icons-expand"
@@ -42,16 +44,17 @@
           </div>
           <div class="formulas">
             <select class="js-select-op">
-              <option id="Geron" value="formulaGerona">Формула Герона</option>
+              <option id="Geron" value="formulaGerona">Geron's formula</option>
               <option id="Pithagor" value="PithagorasFormula">
-                Формула Піфагора
+                Pithagora's formula
               </option>
+              <option id="Vieta" value="VietasFormula">Vieta's formula</option>
             </select>
           </div>
 
-          <button class="js-btn-result">Обчислення</button>
+          <button class="js-btn-result">Calculation</button>
           <div class="output-field">
-            <p>Рішення:</p>
+            <p>Solution:</p>
             <p class="js-output"></p>
           </div>
         </div>

@@ -18,6 +18,12 @@ body {
   background-color: white;
   margin: 200px 500px;
 }
+.top-bar {
+  justify-content: space-between;
+}
+.int-icons {
+  margin: 12px 20px 10px 10px;
+}
 .title-icon {
   display: flex;
   margin: 10px 10px 10px;
@@ -28,7 +34,6 @@ body {
 .window-icons-minus {
   width: 15px;
   height: 15px;
-  margin: 0 0 0 100px;
 }
 .window-icons-expand {
   width: 15px;
