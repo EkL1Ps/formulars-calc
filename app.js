@@ -1,5 +1,3 @@
-//Димура Д.П К-11 Лабораторна робота 1
-
 const inputA = document.querySelector(".js-number-a");
 const inputB = document.querySelector(".js-number-b");
 const inputC = document.querySelector(".js-number-c");
